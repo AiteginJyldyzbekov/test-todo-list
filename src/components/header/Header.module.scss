@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+  background: $lightGreen;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgb(137, 137, 137);
+
+  h1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  margin-top: 10px;
+
+  .checkBtn{
+    background-color: $lightGreen;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .activeBtn{
+    background-color: $darkGreen;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+}
