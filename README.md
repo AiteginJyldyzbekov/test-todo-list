@@ -2,7 +2,7 @@
 
 # Next todo list
 
-Краткое описание вашего проекта.
+Todo list на Next js с использованием state manager'a redux toolkit с dark mode.
 
 ## Запуск проекта
 
