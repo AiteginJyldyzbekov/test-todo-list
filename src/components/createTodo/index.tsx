@@ -15,10 +15,12 @@ const CreateTodo: FC = () => {
       setInputValue('')
     }
   }
+  //Добавление задачки
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value)
   }
+  //Берем значение инпута в состояние
 
   return (
     <form onSubmit={submit} className={scss.wrapper}>

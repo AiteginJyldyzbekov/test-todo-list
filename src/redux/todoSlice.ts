@@ -24,6 +24,7 @@ const todoSlice = createSlice({
         return item;
       });
     },
+    //Reducer для изменения статуса
     onEditTodo: (
       state,
       { payload }: PayloadAction<{ id: number | string; inputValue: string }>
@@ -36,6 +37,7 @@ const todoSlice = createSlice({
         return item;
       });
     },
+    //Reducer для редактирования задачки
   },
   extraReducers: (builder) => {
     builder.addCase(fetchTodos.fulfilled, (state, action) => {

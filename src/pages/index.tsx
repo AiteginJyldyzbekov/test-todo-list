@@ -20,6 +20,7 @@ export default function Home() {
     dispatch(fetchTodos());
   }, []);
 
+  //Фильтрация задач
   const newTodos = todosArray
     .filter((item: TodoType) => {
       if (filter === "all") return item;
@@ -32,7 +33,8 @@ export default function Home() {
     0
   );
   return (
-    <Suspense fallback={<Preloader full />}>
+    //Suspense вместе с lazy load, для прелоадера и для небольшой оптимизации
+    <Suspense fallback={<Preloader full />}> 
       <ThemeToggle />
       <div className="App">
         <Header todos={todosArray.length} completedTodos={completedTodos} />

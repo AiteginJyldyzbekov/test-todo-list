@@ -8,6 +8,7 @@ const Filter: React.FC<PropsType> = ({ state, setState }) => {
   const handle = (status: string) => {
     setState(status);
   };
+  //Изменение состояния фильтрации, чтобы в другой функции отфильтровать массив
   return (
     <div className={scss.wrapper}>
       <button

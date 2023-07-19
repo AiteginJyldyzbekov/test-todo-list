@@ -14,24 +14,29 @@ const Todo: FC<TodoType> = (props) => {
   const handleEdit = () => {
     setEdit(!isEdit);
   };
+  //Состояние чтобы показывать/скрывать edit
 
   const handleDelete = () => {
     dispatch(deleteTodo(props.id));
   };
+  //Удаление задачки
 
   const handleStatus = () => {
     dispatch(onStatusChange(props.id));
   };
+  //Изменение статуса задачки
 
   const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
+  //Берем значения инпута в состояние
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
     dispatch(onEditTodo({ id: props.id, inputValue }));
     setEdit(false);
   };
+  //Сохранени нового значения инпута
 
   return (
     <div className={scss.wrapper}>
